@@ -109,3 +109,7 @@ main {
     font-size: 63px;
   }
 }
+
+footer.page-footer{
+	background-color: #91B8B3 !important;
+}
