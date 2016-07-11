@@ -1,0 +1,111 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+#top-container {
+	background-image: url('./../images/road2.jpeg') !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover;
+	filter: opacity(30%);
+}
+.jumbotron {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	color: inherit;
+	background: none;
+}
+#nameHeading {
+	border: 1px solid;
+	border-color: black;
+	background-color: white;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 5px;
+	font-stretch: condensed !important;
+}
+#secondHeadingLine{
+	border: 1px solid;
+	border-color: black;
+	background-color: white;
+	opacity: 0.8;
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-top: 5px;
+	padding-top: -5px;
+}
+#wordsHeader{
+	font-size: 30px !important;
+	font-weight: 300 !important;
+}
+#navTop, #navbar .nav-wrapper{
+	background-color: transparent; !important;
+	box-shadow: none;
+}
+
+.navList{
+	border: 1px solid;
+	border-color: black;
+	background-color: white;
+	opacity: 0.8;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 5px;
+	padding-top: -5px;
+	float: left;
+	height: 40px !important;
+}
+.short{
+	height: 40px !important;
+	padding-top: 0px !important;
+	margin-top: 0px !important;
+	line-height: 40px !important;
+}
+
+#navMain{
+	width: 50%;
+}
+.websiteListLink{
+	font-size: 18px !important;
+}
+
+.jumbotron h1,
+.jumbotron .h1 {
+	color: inherit;
+}
+.jumbotron p {
+	margin-bottom: 15px;
+	font-size: 21px;
+	font-weight: 200;
+}
+.container .jumbotron,
+.container-fluid .jumbotron {
+	padding-right: 15px;
+	padding-left: 15px;
+	border-radius: 6px;
+}
+.jumbotron .container {
+	max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+	padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .jumbotron,
+  .container-fluid .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 63px;
+  }
+}
