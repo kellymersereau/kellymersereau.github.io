@@ -1,128 +1,155 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<html>
 
-		<title>Kelly Mersereau</title>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kelly Mersereau</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import bootstrap css-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- style sheet -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/style.css"/>
+    <!-- fontawesome -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/font-awesome-4.6.3/css/font-awesome.min.css">
+    <!-- fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+</head>
 
-	  	<!--Import Google Icon Font-->
-      	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	    <!--Import materialize.css-->
-	  	<link type="text/css" rel="stylesheet" href="./assets/materialize/css/materialize.min.css"  media="screen,projection"/>
-		<link type="text/css" rel="stylesheet" href="./assets/css/style.css"  media="screen,projection"/>
-    </head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <body>
-
-		<div class="container-fluid">
-			<div class="container-fluid" id="top-container">
-				<!-- jumbotron -->
-					<div class="jumbotron">
-						<h1 class="center grey-text text-darken-4 thin" id="nameHeading"> KELLY  MERSEREAU</h1>
-						<p class="center" id="secondHeadingLine"><span id="wordsHeader" class="thin black-text center">web developer</span></p>
-						<div id="socialLinksTop">
-							<a class="grey-text text-lighten-4 right socialLinksT" href="#!">
-								<img src="./assets/icons/instagramsquare.png" class="socialIconsT">
-							</a>
-							<a class="grey-text text-lighten-4 right socialLinksT" href="#!">
-								<img src="./assets/icons/facebooksquare.png" class="socialIconsT">
-							</a>
-							<a class="grey-text text-lighten-4 right socialLinksT" href="#!">
-								<img src="./assets/icons/twittersquare.png" class="socialIconsT">
-							</a>
-							<a class="grey-text text-lighten-4 right socialLinksT" href="#!">
-								<img src="./assets/icons/googlesquare.png" class="socialIconsT">
-							</a>
-							<a class="grey-text text-lighten-4 right socialLinksT" href="#!">
-								<img src="./assets/icons/linkedinsquare.png" class="socialIconsT">
-							</a>
-							<a class="grey-text text-lighten-4 right socialLinksT" href="#!">
-								<img src="./assets/icons/githubsquare.png" class="socialIconsT">
-							</a>
-						</div>
-						<br><br><br><br><br><br>
-					</div>
-				<!-- navbar -->
-				<div class="navbar-fixed" id="navbar">
-					<nav id="navTop">
-  						<div class="nav-wrapper">
-							<a href="#" class="brand-logo"></a>
-							<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-							<ul id="nav-mobile" class="right hide-on-med-and-down">
-	  							<li class="navList"><a href="#about" class="thin grey-text text-darken-4">ABOUT</a></li>
-	  							<li class="navList"><a href="#portfolio" class="thin grey-text text-darken-4">PORTFOLIO</a></li>
-	  							<li class="navList"><a href="#resume" class="thin grey-text text-darken-4">RESUME</a></li>
-								<li class="navList"><a href="#contact" class="thin grey-text text-darken-4">CONTACT</a></li>
-							</ul>
-							<!-- mobile sidebar -->
-							<ul class="side-nav" id="mobile-demo">
-								<li class="left"><a href="#about" class="thin grey-text text-darken-4">ABOUT</a></li>
-								<li class="left"><a href="#portfolio" class="thin grey-text text-darken-4">PORTFOLIO</a></li>
-								<li class="left"><a href="#resume" class="thin grey-text text-darken-4">RESUME</a></li>
-								<li class="left"><a href="#contact" class="thin grey-text text-darken-4">CONTACT</a></li>
-							</ul>
-  						</div>
-					</nav>
-				</div>
-
+<!-- Navigation -->
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+					Menu <i class="fa fa-bars"></i>
+				</button>
+				<a class="navbar-brand page-scroll" href="#page-top">
+					<i class="fa fa-angle-double-right"></i> <span class="light"></span>
+				</a>
 			</div>
-		</div>
 
-		<!-- scrollspy  -->
-		<div id="about" class="section scrollspy">
-  			<p>About Me </p>
+			<!-- nav links for toggling -->
+			<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+				<ul class="nav navbar-nav">
+					<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+					<li class="hidden">
+						<a href="#page-top"></a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#about"><span class="light">ABOUT</span></a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#resume"><span class="light">RESUME</span></a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#portfolio"><span class="light">PORTFOLIO</span></a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#contact"><span class="light">CONTACT</span></a>
+					</li>
+				</ul>
+			</div>
+			<!-- end navbar collapse -->
 		</div>
+		<!-- end container -->
+	</nav>
 
-		<div id="portfolio" class="section scrollspy">
-  			<p>Portfolio </p>
-		</div>
+	<!-- header -->
+	<header class="intro">
+	    <div class="intro-body">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-md-8 col-md-offset-2">
+	                    <h1 class="brand-heading">
+	                    	KELLY MERSEREAU
+	                    </h1>
+	                    <p class="intro-text">
+	                    	WEB DEVELOPER
+	                    </p>
+	                    <div class="row">
+	                        <div class="col-md-4 col-md-offset-4 col-xs-10 col-xs-offset-1">
+	                            <div class="row">
+	                                <div class="col-md-10 col-md-offset-2" id="iconListTop">
+	                                    <!-- instagram icon -->
+	                                    <a href="https://www.instagram.com/kellsbellsloveee/" class="btn btn-social-icon btn-instagram">
+	                                        <i class="fa fa-instagram fa-fw fa-2x"></i>
+	                                    </a>
+	                                    <!-- facebook icon -->
+	                                    <a href="https://www.facebook.com/kellsbellsloveee" class="btn btn-social-icon btn-facebook">
+	                                        <i class="fa fa-facebook fa-fw fa-2x"></i>
+	                                    </a>
+	                                    <!-- twitter icon -->
+	                                    <a href="https://twitter.com/kellsbellslovee" class="btn btn-social-icon btn-twitter">
+	                                        <i class="fa fa-twitter fa-fw fa-2x"></i>
+	                                    </a>
+	                                    <!-- google+ icon -->
+	                                    <a href="https://plus.google.com/+KellyMersereau/about" class="btn btn-social-icon btn-google-plus">
+	                                        <i class="fa fa-google-plus fa-fw fa-2x"></i>
+	                                    </a>
+	                                    <!-- LinkedIn icon -->
+	                                    <a href="https://www.linkedin.com/in/kellymersereau" class="btn btn-social-icon btn-linkedin">
+	                                        <i class="fa fa-linkedin fa-fw fa-2x"></i>
+	                                    </a>
+	                                    <!-- github icon -->
+	                                    <a href="https://github.com/kellymersereau" class="btn btn-social-icon btn-github">
+	                                        <i class="fa fa-github fa-fw fa-2x"></i>
+	                                    </a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <a href="#about" class="btn btn-circle page-scroll">
+	                        <i class="fa fa-angle-double-down animated"></i>
+	                    </a>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</header>
 
-		<div id="resume" class="section scrollspy">
-  			<p>Resume </p>
-		</div>
-		<div id="contact" class="section scrollspy">
-			<p>Contact </p>
-		</div>
+   <!-- ABOUT -->
+   <section id="about" class="container content-section text-center">
+   		<div class="row">
+   			<div class="col-lg-8 col-lg-offset-2">
+   				<h2><span class="light">Hey! my name is </span>Kelly Mersereau <span class="light"> and I am a </span>Full Stack Web Developer.</h2>
+   				<p> <br>
+					What I love most about coding is that it is a constant challenge.  The technologies are always growing, changing and advancing so you have to always be learning and adapting.  The idea of working on something for hours and days on end and then being able to see the result of that hard work, is something that is super important to me.  Full Stack Development gives me the ability to be innovative, analytical, creative, and solve problems in a practical and efficient way and that is all I have ever wanted to find in a career.
+					<br><br>
+					When I'm not coding you can find me flailing my body at concerts, singing Bohemian Rhapsody at karaoke bars, doing the robot, driving around listening to my "get the hell out of here" playlist, and chilling with my cats (Charlie Oliver Skiidz and Mike the Cat).</p>
+   			</div>
+   		</div>
+   	</section>
 
-		<!-- button to click to go to the top of the page -->
-		<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-		    <a class="btn-floating btn-large grey lighten-2">
-				<img src="./assets/icons/arrowup.png" id="circle">
-		    </a>
-		</div>
-		<!-- footer -->
-		<footer class="page-footer">
-		 <div class="footer-copyright">
-		   	<div class="container">
-				<a class="grey-text text-lighten-4 right socialLinks" href="#!">
-					<img src="./assets/icons/instagramsquare.png" class="socialIcons">
-				</a>
-			   	<a class="grey-text text-lighten-4 right socialLinks" href="#!">
-					<img src="./assets/icons/facebooksquare.png" class="socialIcons">
-				</a>
-			   	<a class="grey-text text-lighten-4 right socialLinks" href="#!">
-					<img src="./assets/icons/twittersquare.png" class="socialIcons">
-				</a>
-			   	<a class="grey-text text-lighten-4 right socialLinks" href="#!">
-					<img src="./assets/icons/googlesquare.png" class="socialIcons">
-				</a>
-				<a class="grey-text text-lighten-4 right socialLinks" href="#!">
-					<img src="./assets/icons/linkedinsquare.png" class="socialIcons">
-				</a>
-				<a class="grey-text text-lighten-4 right socialLinks" href="#!">
-					<img src="./assets/icons/githubsquare.png" class="socialIcons">
-				</a>
-					KELLY MERSEREAU © 2016
-		   </div>
-		 </div>
-	   </footer>
+   <!-- resume -->
+   	<section id="resume" class="content-section text-center">
+   		<div class="resume-section">
+   			<div class="container">
+   				<div class="col-lg-8 col-lg-offset-2" id="resumeBlock">
+   					<h2>resume</h2>
+   					<p>Click on the link below to view and/or download my resume.</p>
+   					<a href="https://drive.google.com/file/d/0B0yVL2uttaB2TXd4NkRQcnpKVVU/view?usp=sharing" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-file-text-o" aria-hidden="true"></i> View my resume </a>
+   				</div>
+   			</div>	
+   		</div>
+   	</section>
 
-	    <!-- jQuery -->
-	  	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
-		<!-- materialize.js -->
-	  	<script type="text/javascript" src="./assets/materialize/js/materialize.min.js"></script>
-		<!-- app.js -->
-		<script type="text/javascript" src="./assets/js/app.js"></script>
-    </body>
-  </html>
+
+    <!-- footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Kelly Mersereau 2016</p>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <!-- bootstrap.js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- app.js -->
+    <script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+
+</html>
