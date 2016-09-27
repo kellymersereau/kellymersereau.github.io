@@ -1,0 +1,53 @@
+// HTML
+html {
+	width: 100%;
+	height: 100%;
+}
+
+// Body
+body {
+	width: 100%;
+	height: 100%;
+	background-color: @white;
+	color: @gray-darker;
+}
+
+//headers
+h1, h2, h3, h4, h5, h6, label {
+	margin: 0 0 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: @header-font;
+	font-weight: @bold-font;
+	&label {
+		font-size: 1.25em;
+	}
+}
+
+// paragraph text
+p {
+	margin: 0 0 1.563em;
+	font-size: 1.25em;
+	line-height: 1.5;
+}
+
+//links
+
+a {
+	color: @link-color;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		color: @link-color-hover;
+		text-decoration: none;
+	}
+	&:focus {
+		color: @link-color-focus;
+	}
+}
+
+//light text
+.light {
+	font-weight: @light-font;
+}

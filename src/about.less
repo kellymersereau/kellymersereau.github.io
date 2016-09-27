@@ -1,0 +1,160 @@
+//intro
+.intro {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    background: url('../images/road2.jpeg') no-repeat center scroll;
+    background-color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    .intro-body {
+        display: table-cell;
+        vertical-align: middle;
+        .brand-heading {
+            font-size: 2.25em;
+            margin-bottom: 0;
+            color: @gray-darker;
+        }
+        .intro-text {
+            margin-bottom: 0;
+            font-size: 1em;
+            color: @gray-darker;
+        }
+    }
+}
+
+.content-section {
+    padding-top: 100px;
+}
+
+//icons in the intro
+#iconsListTop {
+    padding: 0;
+}
+
+.btn-social-icon {
+    padding: 0;
+    &:hover {
+        outline: none;
+        color: @white;
+        background: rgba(255, 255, 255, 0.1);
+        &i {
+            &.animated {
+                -webkit-animation-name: pulse;
+                -moz-animation-name: pulse;
+                -webkit-animation-duration: 1.5s;
+                -moz-animation-duration: 1.5s;
+                -webkit-animation-iteration-count: infinite;
+                -moz-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-timing-function: linear;
+            }
+        }
+    }
+    &:focus {
+        outline: none;
+        color: @white;
+        background: rgba(255, 255, 255, 0.1)
+    }
+    &i {
+        &.animated {
+            -webkit-transition-property: -webkit-transform;
+            -webkit-transition-duration: 1s;
+            -moz-transition-property: -moz-transform;
+            -moz-transition-duration: 1s;
+        }
+    }
+}
+#circle-about{
+    margin: 10px;
+}
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 5px 16px;
+    border: 2px solid @white;
+    border-radius: 100%;
+    font-size: 40px;
+    color: @white;
+    background: transparent;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    &:hover {
+        outline: none;
+        color: @white;
+        background: rgba(255, 255, 255, 0.1);
+        i {
+            &.animated {
+                -webkit-animation-name: pulse;
+                -moz-animation-name: pulse;
+                -webkit-animation-duration: 1.5s;
+                -moz-animation-duration: 1.5s;
+                -webkit-animation-iteration-count: infinite;
+                -moz-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-timing-function: linear;
+            }
+        }
+    }
+    &:focus {
+        outline: none;
+        color: @gray-light;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    i {
+        &.animated {
+            -webkit-transition-property: -webkit-transform;
+            -webkit-transition-duration: 1s;
+            -moz-transition-property: -moz-transform;
+            -moz-transition-duration: 1s;
+        }
+    }
+}
+
+//keyframes
+@-webkit-keyframes pulse {
+    0 {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {
+    0 {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+//skills section
+.skills-icons {
+    font-size: 5em;
+    margin: .25em;
+}
+
+.skills-div {
+    padding: .75em;
+}

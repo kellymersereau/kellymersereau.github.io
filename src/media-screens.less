@@ -1,0 +1,71 @@
+//media screens
+@media (min-width: 768px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 1.25em;
+        line-height: 1.6;
+    }
+    .content-section {
+        padding-top: 150px;
+    }
+    .resume-section {
+        padding: 150px 0;
+    }
+    #resumeBlock {
+        margin-top: 0;
+    }
+    .contact-section {
+        padding: 100px 0;
+    }
+    .intro {
+        height: 700px;
+        padding: 0;
+    }
+    .intro .intro-body .brand-heading {
+        font-size: 80px;
+    }
+    .intro .intro-body .intro-text {
+        margin-bottom: 0;
+        font-size: 30px;
+        color: @black;
+        font-weight: @intro-font;
+    }
+    footer {
+        padding: 20px 0;
+        p {
+            margin: 0;
+            line-height: 1;
+        }
+    }
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: none;
+        letter-spacing: 1px;
+        background: transparent;
+        -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+        -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+        transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+        &.top-nav-collapse {
+            padding: 0;
+            background: @white;
+            color: @gray-darker;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+            a {
+                color: @black;
+            }
+            &li {
+                &a:hover {
+                    color: rgba(0, 0, 0, 0.8);
+                }
+                &.active {
+                    a {
+                        background-color: rgba(0, 102, 204, 0.3);
+                        &:hover {
+                            color: @link-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

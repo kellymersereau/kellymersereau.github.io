@@ -1,0 +1,55 @@
+//Navbar
+
+.navbar-custom {
+	margin-bottom: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	text-transform: uppercase;
+	font-family: @header-font;
+	background-color: @white;
+	&.navbar-toggle {
+		color: @gray-darker;
+		background-color: rgba(255, 255, 255, 0.2);
+		font-size: .75em;
+	}
+	&.navbar-toggle:focus {
+		outline: none;
+	}
+	&.navbar-toggle:active{
+		outline: none;
+	}
+	&.navbar-brand {
+		font-weight: @bold-font;
+	}
+	&.navbar-brand:focus {
+		outline: none;
+	}
+	&a {
+		color: @gray-darker;
+	}
+	&li {
+		&a {
+			-webkit-transition: background 0.3s ease-in-out;
+			-moz-transition: background 0.3s ease-in-out;
+			transition: background 0.3s ease-in-out;
+			&:hover{
+				color: rgba(255, 255, 255, 0.8);
+				outline: none;
+				background-color: transparent;
+			}
+			&:focus {
+				outline: none;
+				background-color: transparent;
+			}
+			&:active {
+				outline: none;
+				background-color: transparent;
+				&a {
+					background-color: rgba(255, 255, 255, 0.3);
+					&:hover {
+						color: @white;
+					}
+				}
+			}
+		}
+	}
+}
