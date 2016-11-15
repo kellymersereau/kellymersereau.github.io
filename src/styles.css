@@ -6913,6 +6913,8 @@ body {
   height: 100%;
   background-color: #ffffff;
   color: #222222;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -7008,6 +7010,23 @@ a:focus {
 .navbar-customlia:activea:hover {
   color: #ffffff;
 }
+.tile {
+  height: 40.625em;
+  margin: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+.page-container {
+  visibility: hidden;
+}
+.page {
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 56px;
+  left: 0;
+}
 .btn {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -7033,9 +7052,6 @@ a:focus {
   outline: none;
   color: #ffffff;
   background-color: rgba(0, 51, 102, 0.6);
-}
-.thumbnail {
-  height: 40.625em;
 }
 .resume-section {
   width: 100%;
