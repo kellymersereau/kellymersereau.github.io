@@ -24,6 +24,7 @@
             margin-bottom: 0;
             font-size: 1em;
             color: @gray-darker;
+            font-family: @header-font;
         }
     }
 }
@@ -32,9 +33,19 @@
     padding-top: 100px;
 }
 
+.about-top {
+    font-family: @header-font;
+    font-weight: @light-font;
+}
+
 //icons in the intro
 #iconsListTop {
     padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
 }
 
 .btn-social-icon {
@@ -153,9 +164,17 @@
 //skills section
 .skills-icons {
     font-size: 5em;
-    margin: .25em;
+    margin: .5em;
 }
-
+.skills-container {
+    padding: 1em 0;
+}
 .skills-div {
     padding: .75em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 4em;
 }
