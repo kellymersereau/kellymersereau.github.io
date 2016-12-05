@@ -24,9 +24,47 @@
     	background-color: rgba(0, 51, 102, 0.6);
     }
 }
+.portfolio-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
 .thumbnail {
-    height: 40.625em;
+    align-content: center;
+    margin: 1em;
+    img {
+        margin: 0 auto;
+        max-width: 300px;
+        max-height: 200px;
+    }
+    .caption {
+        display: none;
+    }
     &:hover {
-        background-color: #000000;
+        background-color: rgba(50, 50, 50, 0.5);
+        img {
+            display: none;
+        }
+        .caption {
+            display: block;
+            max-width: 300px;
+            max-height: 200px;
+            font-size: .75em;
+            color: @white;
+            p {
+                margin: 0 0 10px;
+            }
+            .btn{
+                border: 1px solid rgba(255, 255, 255, 1.0);
+                i {
+                    color: rgba(255, 255, 255, 1.0)
+                }
+            }
+            .network-name {
+                color: rgba(255, 255, 255, 1.0);
+            }
+        }
     }
 }

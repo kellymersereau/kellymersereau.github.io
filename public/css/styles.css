@@ -6924,9 +6924,10 @@ footerp {
   font-size: .9em;
 }
 .smallFooter {
-  font-size: 2em;
+  font-size: .85em;
   padding-bottom: 15px;
   font-weight: 300;
+  font-style: italic;
 }
 html {
   width: 100%;
@@ -6984,6 +6985,7 @@ a:focus {
   color: #595656;
 }
 .light {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 .navbar-custom {
@@ -7063,8 +7065,49 @@ a:focus {
   color: #ffffff;
   background-color: rgba(0, 51, 102, 0.6);
 }
+.portfolio-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
 .thumbnail {
-  height: 40.625em;
+  align-content: center;
+  margin: 1em;
+}
+.thumbnail img {
+  margin: 0 auto;
+  max-width: 300px;
+  max-height: 200px;
+}
+.thumbnail .caption {
+  display: none;
+}
+.thumbnail:hover {
+  background-color: rgba(50, 50, 50, 0.5);
+}
+.thumbnail:hover img {
+  display: none;
+}
+.thumbnail:hover .caption {
+  display: block;
+  max-width: 300px;
+  max-height: 200px;
+  font-size: .75em;
+  color: #ffffff;
+}
+.thumbnail:hover .caption p {
+  margin: 0 0 10px;
+}
+.thumbnail:hover .caption .btn {
+  border: 1px solid #ffffff;
+}
+.thumbnail:hover .caption .btn i {
+  color: #ffffff;
+}
+.thumbnail:hover .caption .network-name {
+  color: #ffffff;
 }
 .resume-section {
   width: 100%;
