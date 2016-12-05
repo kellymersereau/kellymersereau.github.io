@@ -7085,29 +7085,32 @@ a:focus {
   display: none;
 }
 .thumbnail:hover {
-  background-color: rgba(50, 50, 50, 0.5);
+  background-color: rgba(187, 217, 194, 0.5);
+  border: 1px solid #81dfe9;
 }
 .thumbnail:hover img {
   display: none;
 }
 .thumbnail:hover .caption {
   display: block;
-  max-width: 300px;
-  max-height: 200px;
+  padding: 2em 1em 1em 1em;
+  width: 300px;
+  height: 200px;
   font-size: .75em;
-  color: #ffffff;
+  color: #000000;
 }
 .thumbnail:hover .caption p {
   margin: 0 0 10px;
 }
 .thumbnail:hover .caption .btn {
-  border: 1px solid #ffffff;
+  border: 1px solid #ffd194;
+  background-color: #ffffff;
 }
 .thumbnail:hover .caption .btn i {
-  color: #ffffff;
+  color: rgba(0, 0, 0, 0.8);
 }
 .thumbnail:hover .caption .network-name {
-  color: #ffffff;
+  color: rgba(0, 0, 0, 0.8);
 }
 .resume-section {
   width: 100%;

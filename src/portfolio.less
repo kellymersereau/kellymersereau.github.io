@@ -43,27 +43,30 @@
         display: none;
     }
     &:hover {
-        background-color: rgba(50, 50, 50, 0.5);
+        background-color: rgba(187, 217, 194, 0.5);
+        border: 1px solid rgba(129, 223, 233, 1.0);
         img {
             display: none;
         }
         .caption {
             display: block;
-            max-width: 300px;
-            max-height: 200px;
+            padding: 2em 1em 1em 1em;
+            width: 300px;
+            height: 200px;
             font-size: .75em;
-            color: @white;
+            color: @black;
             p {
                 margin: 0 0 10px;
             }
             .btn{
-                border: 1px solid rgba(255, 255, 255, 1.0);
+                border: 1px solid rgba(255, 209, 148, 1.0);
+                background-color: rgba(255, 255, 255, 1.0);
                 i {
-                    color: rgba(255, 255, 255, 1.0)
+                    color: rgba(0, 0, 0, 0.8);
                 }
             }
             .network-name {
-                color: rgba(255, 255, 255, 1.0);
+                color: rgba(0, 0, 0, 0.8);
             }
         }
     }
